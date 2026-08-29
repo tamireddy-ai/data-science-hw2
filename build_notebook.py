@@ -34,7 +34,14 @@ All performance estimates and error analyses use **out-of-fold (OOF) predictions
 """),
     code(r"""
 from pathlib import Path
+import os
 import warnings
+
+# Keep Matplotlib's cache inside the project so the notebook also works in
+# restricted environments where the default user cache is not writable.
+MPL_CACHE = Path.cwd() / ".matplotlib-cache"
+MPL_CACHE.mkdir(exist_ok=True)
+os.environ.setdefault("MPLCONFIGDIR", str(MPL_CACHE))
 
 import matplotlib.pyplot as plt
 import numpy as np
