@@ -20,7 +20,8 @@ cells = [
 # Homework 2: Regression and Classification Error Analysis
 
 **Course:** Introduction to Data Science  
-**Assignment:** Systematic error analysis with k-fold cross-validation
+**Assignment:** Systematic error analysis with k-fold cross-validation  
+**Student:** Tamir Eddy
 
 This notebook investigates not only which models perform best, but **where and why they fail**. It uses an industrial LiFePO4 battery dataset containing 3,000 sequential cycles.
 
